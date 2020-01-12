@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">    
+    <head>
+        <title>Blog</title>
+        <meta charset="utf-8"/>
+        <link href='styles/style.css' rel='stylesheet' type='text/css'/>
+    </head>
+	<script>
+		var check_btn_status = false;
+		
+		function onChpok(target){
+			if(!check_btn_status) target.style.marginLeft = '64%';
+			else target.style.marginLeft = '0';
+			check_btn_status = !check_btn_status;
+		}
+	</script>
+    <body>
+        
+        <div id="header">
+            <div id="left-block"></div>
+            <div id="central-block">
+                <div id="button-blog"><a class="button-blog-template" href="#">Blog template</a></div>
+                <div id="button-search"><a class="lupa" href="#"><img src="../блог/header/zalupa.png	" alt="search"/></a></div>
+                <div id="header-grey-buttons">
+                    <div id="button-about" class="grey-button"><a class="grey-button-link" href="#">About</a></div>
+                    <div id="button-cooperation" class="grey-button"><a class="grey-button-link" href="#">Cooperation</a></div>
+                    <div id="button-contact" class="grey-button"><a class="grey-button-link" href="#">Contact</a></div>
+                </div>
+                
+                 <div id="header-blue-buttons">
+                     <div id="button-nature" class="blue-button"><a class="blue-button-link" href="#">Nature</a></div>
+                     <div id="button-people" class="blue-button"><a class="blue-button-link" href="#">People</a></div>
+                     <div id="button-trips" class="blue-button"><a class="blue-button-link" href="#">Trips</a></div>
+                     <div id="button-animals" class="blue-button"><a class="blue-button-link" href="#">Animals</a></div>
+                     <div id="button-fashion" class="blue-button"><a class="blue-button-link" href="#">Fashion</a></div>
+                     <div id="button-tech" class="blue-button"><a class="blue-button-link" href="#">Tech</a></div>
+                     <div id="button-bullets" class="blue-bullets"><a class="blue-button-link" href="#">...</a></div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div id="slider">
+            <div id="slider-background">
+            <img src="../блог/slider/g.png" alt="картинка"/>   
+            </div>
+            <div class="slider-tool">
+                <div class="slider-arrow left"><a class="slider-arrow-link" href="#"><</a></div>
+                <div class="slider-arrow right"><a class="slider-arrow-link" href="#">></a></div>
+            </div>
+			<div id="slider-content">
+			<div class="avatar"><img src="../блог/slider/girl.png"></div>
+			<p>Maecenas quis lobortis nunc. Nullam sit vel odio congue vulputa a ut nisi.</p>
+			</div>
+			<a class="slider-blue-button" href="#">People</a>
+			<div id="slider-data-autor" class="data-autor">14 semptember 2016|<a href="#">John Doe</a></div>
+        </div>
+        
+		
+		
+		
+		<div id="first-news-feed" class="grey-news-feed">
+			<div class="news-content">
+				<div class="left news-feed-elem feed-content-pos-left">
+					<div>
+						<img src="../блог/photo1-newsfeed.png"/>
+						<a class="main-buttons main-button-trips" href="#">Trips</a>
+					</div>
+					<div style="position:absolute;">
+						<p>Donec elementum dui semper,pretium dui quis,pretium nisl.Nunc quis ornare odio.</p>
+						<div class="data-autor content-data-autor">14 semptember 2016|<a href="#">John Doe</a></div>
+					</div>
+				</div>
+				<div class="right news-feed-elem feed-content-pos-right">
+					<div>
+						<img src="../блог/photo2-newsfeed.png"/>
+						<a class="main-buttons main-button-tech" href="#">Tech</a>
+					</div>
+					<div style="position:absolute;">
+						<p >Maecenas quis lobortis nunc.Nullam sit amet augue vel odio congue vulputate a ut nisi.</p>
+						<div class="data-autor content-data-autor">11 semptember 2016|<a href="#">John Doe</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		
+        <div id="content">
+			<div class="news-section">
+				<img style="margin-top:45px;"src="../блог/content-big-photo.png"/>
+				<a class="main-buttons main-button-trips" href="#">Trips</a>
+				<div class="big-content-photo-text">
+					<p style="font-size:26pt;">Proin congue elit fringilla</p>
+					<p style="font-size:14pt;">sodales tellus interdum fermentum nulla. Aliquam vitae arcu condimentum,consectetur diam sed, ultrices urna.</p>
+				</div>
+				<div class="data-autor right-cont-data-autor">11 semptember 2016|<a href="#">John Doe</a></div>
+			</div>
+			
+			<table id="content-table">
+				<tr>
+				
+					<td width="380px">
+						<img class="cont-photo" src="../блог/content/cont-photo1.png"/>
+						<a class="main-buttons main-button-nature"href="#">Nature</a>
+						<div class="news-section-text">
+							<p>Donec elementum dui semper, pretium dui quis, pretium nisl.</p>
+							<div class="data-autor content-data-autor">11 semptember 2016|<a href="#">John Doe</a></div>
+						</div>
+					</td>
+					
+					<td width="440px">
+						<img class="cont-photo" src="../блог/content/cont-photo2.png"/>
+						<a class="main-buttons main-button-people" style="margin-left:26px;" href="#">People</a>
+						<div class="news-section-text news-central-block-text">
+							<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+							<div class="data-autor content-data-autor">11 semptember 2016|<a href="#">John Doe</a></div>
+						</div>
+					</td>
+					
+					<td width="380px">
+						<img class="cont-photo" src="../блог/content/cont-photo3.png"/>
+						<a class="main-buttons main-button-tech" href="#">Tech</a>
+						<div class="news-section-text">
+							<p>Sed arcu ipsum, convallis quis porttitor bibendum, convallis non enim.</p>
+							<div class="data-autor content-data-autor">11 semptember 2016|<a href="#">John Doe</a></div>
+						</div>
+					</td>
+				</tr>
+				
+				
+				
+				<tr>
+					<td width="380px">
+						<img class="cont-photo" src="../блог/content/cont-photo4.png"/>
+						<a class="main-buttons main-button-trips" href="#">Trips</a>
+						<div class="news-section-text">
+							<p>Donec elementum dui semper, pretium dui quis, pretium nisl.</p>
+							<div class="data-autor content-data-autor">11 semptember 2016|<a href="#">John Doe</a></div>
+						</div>
+					</td>
+					<td width="440px">
+						<img class="cont-photo" src="../блог/content/cont-photo5.png"/>
+						<a class="main-buttons main-button-trips" style="margin-left:26px;"  href="#">Trips</a>
+						<div class="news-section-text news-central-block-text">
+							<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+							<div class="data-autor content-data-autor">11 semptember 2016|<a href="#">John Doe</a></div>
+						</div>
+					</td>
+					<td width="380px">
+						<img class="cont-photo" src="../блог/content/cont-photo6.png"/>
+						<a class="main-buttons main-button-fashion" href="#">Fashion</a>
+						<div class="news-section-text">
+							<p>Sed arcu ipsum, convallis quis porttitor bibendum, convallis non enim.</p>
+							<div class="data-autor content-data-autor">11 semptember 2016|<a href="#">John Doe</a></div>
+						</div>
+					</td>
+				
+				</tr>
+			</table>
+			
+        </div>
+		
+		<div id="second-news-feed" class="grey-news-feed">
+				<div class="news-content">
+				<div class="left news-feed-elem">
+					<div>
+						<img src="../блог/photo1-newsfeed.png"/>
+						<a class="main-buttons main-button-trips" href="#">Trips</a>
+					</div>
+					<div >
+						<p class="second-feed-text-left">Donec elementum dui semper, pretium dui quis, pretium nisl. Nunc quis ornare odio.</p>
+						<div class="data-autor content-data-autor">14 semptember 2016|<a href="#">John Doe</a></div>
+					</div>
+				</div>
+			
+				<div class="right news-feed-elem">
+					<div>
+						<img src="../блог/photo2-newsfeed.png"/>
+						<a class="main-buttons main-button-tech" href="#">Tech</a>
+					</div>
+					<div style="position:absolute;">
+						<p >Maecenas quis lobortis nunc. Nullam sit amet augue vel odio congue vulputate a ut nisi.</p>
+						<div class="data-autor content-data-autor">11 semptember 2016|<a href="#">John Doe</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+        
+        
+        <div id="newsletter">
+			<img src="../блог/newsletter-background.png"/>
+			<div style="position:relative;top:-235px;">
+				<p style="font-size:27pt;color:white;">Newsletter</p>
+				<p style="font-size:14pt;color:#8baeff;">Donec elementum dui semper, pretium dui quis, pretium nisl.</p>
+				<div id="check-block">
+					<div class="check-line"></div>
+					<div class="check-button" onClick="onChpok(this);">Sing up</div> 
+				</div>
+			</div>
+			
+        </div>
+        
+        
+        <div id="description">
+			<div style="margin:30px auto 0 auto;position:relative; top:100px;">
+				<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+				<p>Try awsome tool for desgners symu.co</p>
+			</div>
+        </div>
+        
+        
+        
+    </body>
+    
+    
+    
+</html>
